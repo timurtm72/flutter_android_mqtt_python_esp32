@@ -73,15 +73,18 @@
 
 ## Структура проекта
 lib/
+```plaintext
+lib/
 ├── main.dart
 ├── home_screen.dart
 ├── login_screen.dart
 ├── models/
-│ ├── rgb_data.dart
-│ └── sensor_data.dart
+│   ├── rgb_data.dart
+│   └── sensor_data.dart
 └── services/
-├── mqtt_service.dart
-└── storage_service.dart
+    ├── mqtt_service.dart
+    └── storage_service.dart
+```
 
 ## Связанные проекты
 - [Проект прошивки ESP32-S3](https://github.com/timurtm72/esp_idf_esp32_mqtt_android)
