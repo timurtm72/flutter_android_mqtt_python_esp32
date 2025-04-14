@@ -84,7 +84,7 @@ lib/
 └── storage_service.dart
 
 ## Связанные проекты
-- [Проект прошивки ESP32-S3]([ссылка_на_проект_C](https://github.com/timurtm72/esp_idf_esp32_mqtt_android))
+- [Проект прошивки ESP32-S3](https://github.com/timurtm72/esp_idf_esp32_mqtt_android)
 - [Версия на Python](https://github.com/timurtm72/python_gui_mqtt_esp32)
 - [Версия на Kotlin](https://github.com/timurtm72/kotlin_mqtt_esp32_python)
 
