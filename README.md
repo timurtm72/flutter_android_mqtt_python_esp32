@@ -1,16 +1,82 @@
-# first_app
+Flutter IoT Система Управления и Мониторинга
+Мобильное приложение на Flutter для управления и мониторинга IoT системы на базе ESP32-S3. Приложение взаимодействует с MQTT брокером для управления RGB светодиодом и отображения данных с датчика температуры и влажности.
+Архитектура проекта
+Проект построен с использованием чистой архитектуры Flutter и включает следующие основные компоненты:
+Экраны
+LoginScreen - экран авторизации с сохранением учетных данных
+HomeScreen - главный экран с двумя вкладками:
+Управление RGB светодиодом
+Мониторинг датчиков
+Сервисы
+MqttService - работа с MQTT протоколом:
+Подключение к брокеру
+Публикация команд управления RGB
+Подписка на данные с датчиков
+StorageService - локальное хранение данных:
+Сохранение учетных данных
+Кэширование настроек RGB
+Хранение последних показаний датчиков
+Модели данных
+RgbData - модель для RGB настроек
+SensorData - модель данных с датчиков
+Основные функции
+Управление RGB
+Выбор цвета через ColorPicker
+Регулировка яркости
+Предпросмотр выбранного цвета
+Сохранение настроек локально
+Отправка команд через MQTT
+Мониторинг датчиков
+Отображение текущей температуры и влажности
+Построение графиков за 24 часа
+Автоматическое обновление при получении новых данных
+Сохранение истории локально
+Технические особенности
+Использование StreamController для обработки MQTT сообщений
+Автоматическое переподключение к брокеру
+Локальное кэширование данных через SharedPreferences
+Визуализация данных с помощью fl_chart
+Выбор цвета через flutter_colorpicker
+Обработка JSON с помощью встроенных кодеков
+Потоки данных
+Исходящие
+Команды управления RGB через MQTT:
+{
+  "red": 255,
+  "green": 0,
+  "blue": 0,
+  "brightness": 100
+}
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Входящие
+Данные с датчиков через MQTT:
+{
+  "temperature": 25.6,
+  "humidity": 45.2
+}
+Структура проекта
+lib/
+├── main.dart
+├── home_screen.dart
+├── login_screen.dart
+├── models/
+│   ├── rgb_data.dart
+│   └── sensor_data.dart
+└── services/
+    ├── mqtt_service.dart
+    └── storage_service.dart
+Связанные проекты
+Проект прошивки ESP32-S3
+Версия на Python
+Версия на Kotlin
+Требования
+Flutter SDK
+Зависимости:
+mqtt_client
+shared_preferences
+fl_chart
+flutter_colorpicker
+Установка и запуск
+Клонировать репозиторий
+Установить зависимости: flutter pub get
+Запустить приложение: flutter run
