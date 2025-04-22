@@ -3,7 +3,8 @@
 - [Мой сайт:](https://technocom.site123.me/)
 - [Мое резюме инженер программист microcontrollers, PLC:](https://innopolis.hh.ru/resume/782d86d5ff0e9487200039ed1f6f3373384b30)
 - [Мое резюме инженер программист Java backend developer (Spring):](https://innopolis.hh.ru/resume/9e3b451aff03fd23830039ed1f496e79587649)
-
+- [Linkedin](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
+- 
 # Flutter IoT Система Управления и Мониторинга
 
 Мобильное приложение на Flutter для управления и мониторинга IoT системы на базе ESP32-S3. Приложение взаимодействует с MQTT брокером для управления RGB светодиодом и отображения данных с датчика температуры и влажности.
